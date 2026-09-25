@@ -18,10 +18,10 @@ DATE,PATIENT,ENCOUNTER,CATEGORY,CODE,DESCRIPTION,VALUE,UNITS,TYPE
 ## Target Disease Availability
 | Research label | Synthea description | Code | Records | Unique patients |
 |---|---|---|---:|---:|
-| Hypertension | ADD RESULT | 59621000 | 1953 | 1953 |
-| Hyperlipidemia | ADD RESULT | 55822004 | 1028 | 1953 |
-| Diabetes | ADD RESULT | 44054006 | 694  | 694  |
-| Atrial fibrillation | ADD RESULT | 49436004 | 89 | 89 |
+| Hypertension | Essential hypertension (disorder) | 59621000 | 1953 | 1953 |
+| Hyperlipidemia | Hyperlipidemia (disorder) | 55822004 | 1028 | 1953 |
+| Diabetes | Diabetes mellitus type 2 (disorder) | 44054006 | 694  | 694  |
+| Atrial fibrillation | Atrial fibrillation (disorder) | 49436004 | 89 | 89 |
 
 ## Observations
 - Several Synthea descriptions may map to one research label.

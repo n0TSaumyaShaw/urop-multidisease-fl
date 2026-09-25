@@ -6,7 +6,7 @@
 - Generation method: Generated locally using the Synthea executable JAR
 - Download source: https://github.com/synthetichealth/synthea/releases
 - Synthea release: master-branch-latest
-- JAR SHA-256: ADD JAR HASH
+- JAR SHA-256: 018AD7F04F7AACB995804D7D4781C76D5FC714F7F23257BA50DAA9EEFAE224AC
 - Generation date: 25 September 2026
 
 ## Generation Parameters
