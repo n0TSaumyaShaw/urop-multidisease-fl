@@ -149,7 +149,8 @@ def create_preprocessor():
             (
                 "imputer",
                 SimpleImputer(
-                    strategy="median"
+                    strategy="median",
+                    add_indicator=True,
                 ),
             ),
             (
