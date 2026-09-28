@@ -403,6 +403,16 @@ def run_local_training():
         PREPROCESSOR_PATH
     )
 
+    transformed_feature_count = len(
+        preprocessor.get_feature_names_out()
+    )
+
+    print(
+        "Transformed feature count used by "
+        "federated model: "
+        f"{transformed_feature_count}"
+    )
+
     training_subject_ids = (
         patient_splits[
             patient_splits["split"] == "train"
@@ -507,7 +517,7 @@ def run_local_training():
     # This is the initial global model.
     # Every client receives an identical copy.
     initial_global_model = MultiDiseaseNN(
-        input_dim=len(FEATURE_COLS),
+        input_dim=transformed_feature_count,
         output_dim=len(TARGET_COLS),
     )
 
@@ -520,7 +530,7 @@ def run_local_training():
             "model_state_dict": (
                 initial_model_weights
             ),
-            "input_dim": len(FEATURE_COLS),
+            "input_dim": transformed_feature_count,
             "output_dim": len(TARGET_COLS),
             "random_seed": RANDOM_SEED,
         },
